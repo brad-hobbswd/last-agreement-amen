@@ -489,6 +489,50 @@ margin-bottom:28px;
 }
 
 /*====================
+BOOK COVER
+====================*/
+
+.book-cover{
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+}
+
+.book-cover img{
+
+display:block;
+
+width:100%;
+
+max-width:420px;
+
+height:auto;
+
+border-radius:18px;
+
+box-shadow:
+0 10px 25px rgba(0,0,0,.12),
+0 3px 8px rgba(0,0,0,.08);
+
+transition:var(--transition);
+
+}
+
+.book-cover img:hover{
+
+transform:translateY(-4px);
+
+box-shadow:
+0 16px 35px rgba(0,0,0,.16),
+0 5px 12px rgba(0,0,0,.10);
+
+}
+
+/*====================
 DIVIDER
 ====================*/
 
