@@ -43,54 +43,27 @@ rel="stylesheet">
 
 <link
 rel="stylesheet"
-href="css/styles.css">
+href="styles.css">
+
+  <meta
+name="keywords"
+content="The Last Agreement, Amen, Bradley Hobbs, Christian book, biblical agreement, discernment, faith, Jesus, Holy Ghost, Scripture">
 
 </head>
 
 <body>
+  <a
+href="#main-content"
+class="skip-link">
 
-<header>
-
-<img
-src="images/banner.webp"
-alt="The Last Agreement Banner"
-class="hero-banner">
-
-<nav>
-
-<div class="nav-container">
-
-<a
-href="index.html"
-class="logo">
-
-THE LAST AGREEMENT
+Skip to content
 
 </a>
 
-<ul class="nav-links">
+<div id="header"></div>
 
-<li><a href="index.html">Home</a></li>
 
-<li><a href="about.html">About</a></li>
-
-<li><a href="book.html">The Book</a></li>
-
-<li><a href="contents.html">Contents</a></li>
-
-<li><a href="author.html">Author</a></li>
-
-<li><a href="contact.html">Contact</a></li>
-
-</ul>
-
-</div>
-
-</nav>
-
-</header>
-
-<main>
+<main id="main-content">
 
 <section>
 
@@ -134,6 +107,23 @@ Explore the Book
 
 </section>
 
+<section class="featured">
+
+<div class="container">
+
+<p class="featured-text">
+
+A book exploring discernment, spiritual agreement, and why every <strong>amen</strong> shapes the direction of faith.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container two-column">
 <section>
 
 <div class="container two-column">
@@ -169,7 +159,7 @@ View Table of Contents
 <div>
 
 <img
-src="images/agreementbookcover.png"
+src="agreementbookcover.png"
 alt="The Last Agreement Book Cover"
 loading="lazy">
 
@@ -185,11 +175,11 @@ loading="lazy">
 
 <div class="quote">
 
-<p>
+<blockquote>
 
-Agreement determines direction before direction becomes visible.
+“Agreement determines direction before direction becomes visible.”
 
-</p>
+</blockquote>
 
 <span>
 
@@ -217,7 +207,9 @@ Inside the Book
 
 <div class="chapter-grid">
 
-<div class="chapter-card">
+<a
+href="contents.html"
+class="chapter-card"> </a>
 
 <div class="chapter-number">
 
@@ -332,10 +324,60 @@ Read More
 
 </section>
 
+<section class="cta">
+
+<div class="container">
+
+<h2>
+
+One Word Can Change Everything
+
+</h2>
+
+<div class="divider"></div>
+
+<p class="lead">
+
+Reserve every amen for the voice of Jesus and discover the power of holy agreement.
+
+</p>
+
+<a
+href="book.html"
+class="button">
+
+Begin Reading
+
+</a>
+
+</div>
+
+</section>
+  
 </main>
 
 <div id="footer"></div>
 
+<script>
+
+document.addEventListener("DOMContentLoaded", () => {
+
+fetch("header.html")
+.then(response => response.text())
+.then(data => {
+document.getElementById("header").innerHTML = data;
+});
+
+fetch("footer.html")
+.then(response => response.text())
+.then(data => {
+document.getElementById("footer").innerHTML = data;
+});
+
+});
+
+</script>
+  
 <script>
 
 document.addEventListener("DOMContentLoaded", () => {
