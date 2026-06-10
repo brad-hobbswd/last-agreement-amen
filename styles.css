@@ -408,27 +408,29 @@ QUOTE BLOCK
 
 .quote{
 
-background:var(--black);
+background:transparent;
 
-color:white;
-
-padding:90px 50px;
+padding:100px 50px;
 
 text-align:center;
 
-box-shadow:var(--shadow);
-
 }
 
-.quote p{
-
-font-size:2rem;
+.quote blockquote{
 
 font-family:"Cinzel",serif;
 
-color:var(--gold-light);
+font-size:3rem;
 
-margin:0;
+font-style:italic;
+
+line-height:1.5;
+
+color:var(--black);
+
+max-width:900px;
+
+margin:auto;
 
 }
 
@@ -436,13 +438,17 @@ margin:0;
 
 display:block;
 
-margin-top:30px;
+margin-top:40px;
 
-font-size:1rem;
+font-family:"Cinzel",serif;
 
-letter-spacing:3px;
+font-size:1.4rem;
 
-color:white;
+letter-spacing:8px;
+
+color:#6d675d;
+
+text-transform:uppercase;
 
 }
 
