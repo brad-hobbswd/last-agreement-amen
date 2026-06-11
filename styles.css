@@ -294,6 +294,8 @@ padding:18px 42px;
 
 min-width:240px;
 
+text-align:center;
+
 background:var(--gold);
 
 color:var(--black);
@@ -319,18 +321,6 @@ transition:var(--transition);
 background:black;
 
 color:var(--gold);
-
-}
-
-.chapter-card{
-
-display:flex;
-
-flex-direction:column;
-
-justify-content:center;
-
-min-height:420px;
 
 }
 
@@ -418,7 +408,19 @@ gap:30px;
 
 .chapter-card{
 
-background:white;
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+min-height:420px;
+
+text-decoration:none;
+
+color:inherit;
+
+background:var(--white);
 
 padding:30px;
 
@@ -433,6 +435,8 @@ transition:var(--transition);
 .chapter-card:hover{
 
 transform:translateY(-8px);
+
+color:inherit;
 
 }
 
@@ -468,11 +472,13 @@ border-radius:12px;
 
 .quote blockquote{
 
+margin:0;
+
 font-family:"Cinzel",serif;
 
 font-size:3rem;
 
-font-style:italic;
+font-style:normal;
 
 line-height:1.5;
 
@@ -800,30 +806,6 @@ text-align:right;
 
 }
 
-.footer-quote{
-
-max-width:1000px;
-
-margin:0 auto;
-
-text-align:center;
-
-font-family:"Cinzel",serif;
-
-font-size:2.2rem;
-
-font-style:italic;
-
-font-weight:500;
-
-line-height:1.6;
-
-letter-spacing:1px;
-
-color:#56514a;
-
-}
-
 /*====================
 HERO STATEMENT
 ====================*/
@@ -832,7 +814,7 @@ HERO STATEMENT
 
 max-width:800px;
 
-margin:35px 0;
+margin:45px 0;
 
 font-family:"Cinzel",serif;
 
@@ -866,11 +848,11 @@ background:var(--paper);
 
 max-width:900px;
 
-background:rgba(255,255,255,.55);
+background:rgba(255,255,255,.35);
 
-padding:60px;
+padding:50px 60px;
 
-border-radius:12px;
+border-radius:10px;
 
 border:1px solid rgba(200,154,45,.18);
 
