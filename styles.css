@@ -850,6 +850,55 @@ color:#56514a;
 
 }
 
+/*====================
+FEATURED STATEMENT
+====================*/
+
+.featured{
+
+padding:80px 0;
+
+background:var(--paper);
+
+}
+
+.featured-divider{
+
+width:220px;
+
+height:2px;
+
+background:var(--gold);
+
+opacity:.7;
+
+margin:0 auto;
+
+}
+
+.featured-statement{
+
+max-width:900px;
+
+margin:35px auto;
+
+text-align:center;
+
+font-family:"Cinzel",serif;
+
+font-size:2rem;
+
+font-style:italic;
+
+font-weight:500;
+
+line-height:1.7;
+
+letter-spacing:1px;
+
+color:#56514a;
+
+}
 
 /*====================
 RESPONSIVE
