@@ -12,7 +12,7 @@ content="width=device-width, initial-scale=1.0">
 
 <meta
 name="description"
-content="Chapter 6 of The Last Agreement by Bradley Hobbs. The Day I Stopped Saying Amen explores discernment, holy agreement, and learning to recognize the voice of Jesus.">
+content="Chapter 6 of The Last Agreement by Bradley Hobbs.">
 
 <meta
 name="author"
@@ -22,9 +22,13 @@ content="Bradley Hobbs">
 name="theme-color"
 content="#0d0d0d">
 
+<meta
+name="keywords"
+content="The Last Agreement, Chapter 6, The Day I Stopped Saying Amen, Bradley Hobbs">
+
 <title>
 
-Chapter 6 | The Day I Stopped Saying Amen | The Last Agreement
+Chapter 6 | The Day I Stopped Saying Amen
 
 </title>
 
@@ -51,25 +55,35 @@ href="styles.css">
 
 <div id="header"></div>
 
-<main>
+<main id="main-content">
 
 <section>
 
-<div class="container book-content">
-
-<p class="chapter-label">
-
-Chapter 6
-
-</p>
+<div class="container">
 
 <h1>
 
-The Day I Stopped Saying Amen
+Chapter 6
 
 </h1>
 
 <div class="divider"></div>
+
+<p class="lead">
+
+The Day I Stopped Saying Amen
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<div class="book-content">
 
 <p>
 
@@ -317,13 +331,23 @@ Lord, teach me to recognize Your voice so clearly that no counterfeit can persua
 
 </p>
 
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
 <div class="chapter-navigation">
 
 <a
 href="chapter5.html"
 class="button">
 
-← Chapter 5
+← Previous
 
 </a>
 
@@ -331,7 +355,7 @@ class="button">
 href="contents.html"
 class="button">
 
-Contents
+Table of Contents
 
 </a>
 
@@ -339,7 +363,7 @@ Contents
 href="chapter7.html"
 class="button">
 
-Chapter 7 →
+Turn the Page →
 
 </a>
 
@@ -358,23 +382,15 @@ Chapter 7 →
 document.addEventListener("DOMContentLoaded",()=>{
 
 fetch("header.html")
-
 .then(response=>response.text())
-
 .then(data=>{
-
 document.getElementById("header").innerHTML=data;
-
 });
 
 fetch("footer.html")
-
 .then(response=>response.text())
-
 .then(data=>{
-
 document.getElementById("footer").innerHTML=data;
-
 });
 
 });
