@@ -1764,3 +1764,81 @@ body.about-book-page #main-content > section:nth-child(4) .quote blockquote{
     line-height:1.8;
   }
 }
+
+
+/* ======================================
+ABOUT THE BOOK: CONSISTENT SECTION SPACING
+====================================== */
+
+body.about-book-page #main-content > section:not(:first-child) {
+  padding-block: clamp(42px, 5vw, 64px);
+}
+
+body.about-book-page #main-content > section:not(:first-child) .container {
+  width: min(calc(100% - 48px), 920px);
+  margin-inline: auto;
+}
+
+body.about-book-page #main-content > section:nth-child(2) .container {
+  width: min(calc(100% - 48px), 1080px);
+}
+
+body.about-book-page #main-content h2 {
+  margin-bottom: 18px;
+  line-height: 1.25;
+}
+
+body.about-book-page #main-content p {
+  margin-top: 0;
+  margin-bottom: 18px;
+  line-height: 1.82;
+}
+
+body.about-book-page #main-content p:last-child {
+  margin-bottom: 0;
+}
+
+body.about-book-page #main-content > section:nth-child(3) .divider,
+body.about-book-page #main-content > section:nth-child(5) .divider {
+  margin-bottom: 24px;
+}
+
+body.about-book-page #main-content > section:nth-child(4) {
+  padding-block: clamp(34px, 4vw, 50px);
+}
+
+body.about-book-page #main-content > section:nth-child(4) .quote {
+  padding: clamp(38px, 5vw, 60px) clamp(20px, 4vw, 48px);
+}
+
+@media (max-width: 600px) {
+  body.about-book-page #main-content > section:not(:first-child) {
+    padding-block: 34px;
+  }
+
+  body.about-book-page #main-content > section:not(:first-child) .container,
+  body.about-book-page #main-content > section:nth-child(2) .container {
+    width: calc(100% - 40px);
+  }
+
+  body.about-book-page #main-content h2 {
+    margin-bottom: 14px;
+  }
+
+  body.about-book-page #main-content p {
+    margin-bottom: 16px;
+    line-height: 1.78;
+  }
+
+  body.about-book-page #main-content > section:nth-child(2) .two-column {
+    gap: 26px;
+  }
+
+  body.about-book-page #main-content > section:nth-child(4) {
+    padding-block: 26px;
+  }
+
+  body.about-book-page #main-content > section:nth-child(4) .quote {
+    padding: 34px 18px;
+  }
+}
