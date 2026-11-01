@@ -1626,3 +1626,141 @@ body.author-page #main-content > section:nth-child(2) p{
     padding:42px 0 48px;
   }
 }
+
+
+/* ======================================
+ABOUT THE BOOK PAGE SPACING AND ALIGNMENT
+Scoped only to about.html.
+====================================== */
+
+body.about-book-page #main-content > section:first-child{
+  min-height:0;
+  display:block;
+  padding:clamp(58px,6vw,82px) 0 clamp(52px,5vw,70px);
+  text-align:center;
+  background:
+    radial-gradient(ellipse at 50% 0%,rgba(200,154,45,.09),transparent 64%),
+    linear-gradient(180deg,var(--paper),var(--cream));
+}
+
+body.about-book-page #main-content > section:first-child .container{
+  width:min(100% - 48px,1120px);
+  margin-inline:auto;
+}
+
+body.about-book-page #main-content > section:first-child h1{
+  font-size:clamp(2.7rem,5.6vw,4.8rem);
+  line-height:1.12;
+  margin:0 auto;
+}
+
+body.about-book-page #main-content > section:first-child .divider{
+  margin:22px auto 24px;
+}
+
+body.about-book-page #main-content > section:first-child .lead{
+  max-width:760px;
+  margin:0 auto;
+  line-height:1.7;
+}
+
+body.about-book-page #main-content > section:nth-child(2){
+  padding:clamp(54px,6vw,78px) 0;
+}
+
+body.about-book-page #main-content > section:nth-child(2) .container{
+  width:min(100% - 48px,1080px);
+}
+
+body.about-book-page #main-content > section:nth-child(2) .two-column{
+  grid-template-columns:minmax(0,1.1fr) minmax(260px,.9fr);
+  gap:clamp(38px,6vw,76px);
+  align-items:center;
+}
+
+body.about-book-page #main-content > section:nth-child(2) h2{
+  margin-top:0;
+}
+
+body.about-book-page #main-content > section:nth-child(2) .divider{
+  margin:22px 0 28px;
+}
+
+body.about-book-page #main-content > section:nth-child(2) p,
+body.about-book-page #main-content > section:not(:first-child):not(:nth-child(2)) .container > p{
+  max-width:850px;
+  line-height:1.9;
+  margin-bottom:24px;
+}
+
+body.about-book-page #main-content > section:nth-child(3) .container,
+body.about-book-page #main-content > section:nth-child(5) .container{
+  width:min(100% - 48px,900px);
+}
+
+body.about-book-page #main-content > section:nth-child(3) h2,
+body.about-book-page #main-content > section:nth-child(5) h2{
+  text-align:center;
+}
+
+body.about-book-page #main-content > section:nth-child(3) .divider,
+body.about-book-page #main-content > section:nth-child(5) .divider{
+  margin:22px auto 30px;
+}
+
+body.about-book-page #main-content > section:nth-child(4) .quote{
+  width:min(100%,1000px);
+  margin:0 auto;
+  padding:clamp(48px,7vw,82px) clamp(22px,5vw,64px);
+}
+
+body.about-book-page #main-content > section:nth-child(4) .quote blockquote{
+  font-size:clamp(1.65rem,3.4vw,2.8rem);
+  line-height:1.45;
+}
+
+@media(max-width:900px){
+  body.about-book-page #main-content > section:first-child{
+    padding:58px 0 62px;
+  }
+  body.about-book-page #main-content > section:nth-child(2){
+    padding:48px 0 58px;
+  }
+  body.about-book-page #main-content > section:nth-child(2) .two-column{
+    grid-template-columns:1fr;
+    gap:38px;
+  }
+  body.about-book-page #main-content > section:nth-child(2) .two-column > div:first-child{
+    max-width:760px;
+    margin-inline:auto;
+  }
+  body.about-book-page #main-content > section:nth-child(2) .book-cover img{
+    width:min(78%,360px);
+  }
+}
+
+@media(max-width:600px){
+  body.about-book-page #main-content > section:first-child .container,
+  body.about-book-page #main-content > section:nth-child(2) .container,
+  body.about-book-page #main-content > section:nth-child(3) .container,
+  body.about-book-page #main-content > section:nth-child(5) .container{
+    width:calc(100% - 36px);
+  }
+  body.about-book-page #main-content > section:first-child{
+    padding:48px 0 52px;
+  }
+  body.about-book-page #main-content > section:first-child h1{
+    font-size:clamp(2.25rem,10vw,3rem);
+  }
+  body.about-book-page #main-content > section:first-child .lead{
+    font-size:1rem;
+  }
+  body.about-book-page #main-content > section:nth-child(2){
+    padding:42px 0 48px;
+  }
+  body.about-book-page #main-content > section:nth-child(2) p,
+  body.about-book-page #main-content > section:not(:first-child):not(:nth-child(2)) .container > p{
+    font-size:1rem;
+    line-height:1.8;
+  }
+}
